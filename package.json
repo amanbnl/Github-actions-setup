@@ -4,11 +4,14 @@
   "description": "An express server with OOPs architecture",
   "main": "dist/src/server/server.js",
   "scripts": {
-    "start": "nodemon --watch src --ext ts --exec ts-node src/server/server.ts"
+    "start": "nodemon --watch src --ext ts --exec ts-node src/server/server.ts",
+    "build": "tsc",
+    "lint": "echo \"No linting configured\"",
+    "test": "echo \"No tests configured\""
   },
   "author": {
-    "name": "The Fresh Work",
-    "email": "team@thefreshwork.com"
+    "name": "Amandeep Singh",
+    "email": "amanbnl6501@gmail.com"
   },
   "license": "ISC",
   "devDependencies": {
