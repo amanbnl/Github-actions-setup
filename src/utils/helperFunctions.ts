@@ -28,8 +28,8 @@ class HelperFunctions implements IHelperFunctions {
       throw error;
     }
 
-    const message = error instanceof Error ? error.message : HTTP_STATUS.INTERNAL_SERVER_ERROR;
-    throw new CustomError({ message, status: HTTP_STATUS.INTERNAL_SERVER_ERROR });
+    const message = error instanceof Error ? error.message : HTTP_STATUS_MESSAGES.INTERNAL_SERVER_ERROR;
+    throw new CustomError({ message , status: HTTP_STATUS.INTERNAL_SERVER_ERROR });
   }
 
   /**
